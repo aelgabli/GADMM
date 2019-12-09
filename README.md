@@ -8,7 +8,8 @@ Both codes will run linear regression using our proposed algorithm, GADMM, and a
 The datasets used in this code are available at:
 https://www.dropbox.com/sh/kphv5o9uelynci2/AADNQF3HCr1tWS6_OlJSWzZea?dl=0
 
-#Citation
+# Citation
+
 @article{elgabli2019gadmm,
   title={GADMM: Fast and communication efficient framework for distributed machine learning},
   author={Elgabli, Anis and Park, Jihong and Bedi, Amrit S and Bennis, Mehdi and Aggarwal, Vaneet},
