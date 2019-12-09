@@ -1,8 +1,8 @@
 # GADMM
 GADMM: fast and communication efficient framework for distributed machine learning
 
-# For linear regression on synthetic data, run linearRegression_synthetic.m.
-# For linear regression on real data, run linearRegression_real.m
+ For linear regression on synthetic data, run linearRegression_synthetic.m.
+ For linear regression on real data, run linearRegression_real.m
 Both codes will run linear regression using our proposed algorithm, GADMM, and all baselines methods we describe in our paper (see below). 
 
 The datasets used in this code are available at:
