@@ -11,7 +11,7 @@ close all
 [ydata_30] = load('data30/y.txt'); 
 
 
-num_iter1=10000;
+num_iter1=60000;
 num_iter=num_iter1;
 %num_split=3;
 num_workers=24;
@@ -69,7 +69,7 @@ opt_obj = obj0*ones(1,num_iter);
 
 
 %% Dual Averaging baseline
-num_iter=50000;
+%num_iter=50000;
 acc = 1E-4;
 
 [obj_dualAvg, loss_dualAvg, Iter_dualAvg, dualAvg_time] = dual_averaging(X_fede,y_fede, num_workers, num_feature, num_sample, num_iter, obj0, acc, stepsize2);
@@ -230,7 +230,7 @@ hold on
 xlabel({'Clock Time';'(b)'},'fontsize',16,'fontname','Times New Roman')
 ylabel('Objective Error','fontsize',16,'fontname','Times New Roman')
 legend('GD','LAG-PS','LAG-WK','DGD', 'Dual-Avg','GADMM, \rho=3','GADMM, \rho=5','GADMM, \rho=7');
-%ylim([10^-4 10^3])
+ylim([10^-4 10^3])
 xlim([0 3])
 set(gca,'fontsize',14,'fontweight','bold');
 
