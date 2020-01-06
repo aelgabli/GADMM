@@ -1,5 +1,5 @@
-# GADMM
-GADMM: fast and communication efficient framework for distributed machine learning
+# GADMM: fast and communication efficient framework for distributed machine learning
+
 
  For linear regression on synthetic data, run LinearRegression_synthetic.m.
  
