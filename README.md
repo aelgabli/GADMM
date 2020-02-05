@@ -19,7 +19,7 @@ For linear regression using D-GADMM (regression over dynamic network) and real d
 To Compare D-GADMM with GADMM and standared ADMM (ADMM with parameter server. i.e., star topology) using synthetic dataset, run LinearRegression_gadmm_vs_admm.m
 
 The datasets used in this code are available at:
-https://www.dropbox.com/sh/kphv5o9uelynci2/AADNQF3HCr1tWS6_OlJSWzZea?dl=0
+https://tiny.cc/gadmm_dataset
 
 # Citation
 
