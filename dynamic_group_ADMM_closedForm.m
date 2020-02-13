@@ -16,7 +16,8 @@ gadmm_time(1)=0;
  for i = 1:max_iter
      
      if (i > 1 && mod(i,coherence_Time)== 0)
-         [path, pathCost, ~]=findPath(no_workers);
+         %[path, pathCost, ~]=findPath(no_workers);
+         [path, pathCost, ~, ~, ~]=findPath2(no_workers);
      end
      
      for jj =1:2:no_workers
