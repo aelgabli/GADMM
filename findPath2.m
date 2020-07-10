@@ -25,7 +25,7 @@ end
 
 for n=1:N
     d_square_central(n)=(x(n)-x(center))^2+(y(n)-y(center))^2;
-    P_central(n)= 1/2*d_square_central(n)*eta*B*2^(2*R/B);
+    P_central(n)= 1/2*d_square_central(n)*eta*B*(2^(2*R/B)-1);
 end
 
 
@@ -34,7 +34,7 @@ for n=1:N
     for m=1:N
         if(n~=m)
             d_square(n,m)=(x(n)-x(m))^2+(y(n)-y(m))^2;
-            P(n,m)= d_square(n,m)*eta*B*2^(R/B);
+            P(n,m)= d_square(n,m)*eta*B*(2^(R/B)-1);
         end
     end
 end
