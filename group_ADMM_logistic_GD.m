@@ -51,7 +51,7 @@ gadmm_time(1)=0;
          end
 
          out(:,ii)=logReg_GD(XX(first:last,1:s1),YY(first:last), out(:,ii),...
-             C1, C2, term_1, term_2,lambda_logistic, gdStep);
+             C1, C2, term_1, term_2,lambda_logistic, gdStep,rho);
          
         %objFun=lambda_logistic*0.5*sum_square(x)+sum(log(1+exp(-YY(first:last).*(XX(first:last,1:s1)*x))))- C1'*x+C2'*x + term_1...
             %+term_2;
@@ -91,7 +91,7 @@ gadmm_time(1)=0;
          last = first+s2-1;
          
          out(:,ii)=logReg_GD(XX(first:last,1:s1),YY(first:last), out(:,ii),...
-             C1, C2, term_1, term_2,lambda_logistic, gdStep);
+             C1, C2, term_1, term_2,lambda_logistic, gdStep,rho);
          
        % objFun=lambda_logistic*0.5*sum_square(x)+sum(log(1+exp(-YY(first:last).*(XX(first:last,1:s1)*x))))- C1'*x+C2'*x + term_1...
             %+term_2;
