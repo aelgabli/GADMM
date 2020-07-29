@@ -6,7 +6,7 @@ for j=1:100
 %     end
     %mu=mu';
     %temp=(Y./(1+exp(Y.*(X*x))));
-    g=-(X'*(Y./(1+exp(Y.*(X*x)))))+lambda_logistic*x-C1+C2+term1+term2;
+    g=-(X'*(Y./(1+exp(Y.*(X*x)))))+lambda_logistic*x-C1+C2+rho*x+term1+term2;
     %g=X*(mu-Y)+lambda_logistic*x-C1+C2+term1+term2;
     %S=diag(mu);
     %H=X*S*X'+diag(lambda_logistic)+diag(2*rho);
