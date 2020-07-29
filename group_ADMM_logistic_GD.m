@@ -27,7 +27,8 @@ gadmm_time(1)=0;
          else
              C1= lambda(:,ii-1);
              %term_1=rho/2*sum_square(x-out(:,ii-1));
-             term_1=rho*(out(:,ii)-out(:,ii-1));
+             %term_1=rho*(out(:,ii)-out(:,ii-1));
+             term_1=-rho*out(:,ii-1);
          end
          
          if ii == no_workers
@@ -36,7 +37,8 @@ gadmm_time(1)=0;
          else
              C2= lambda(:,ii);
              %term_2 = rho/2*sum_square(x-out(:,ii+1));
-             term_2=rho*(out(:,ii)-out(:,ii+1));
+             %term_2=rho*(out(:,ii)-out(:,ii+1));
+             term_2=-rho*out(:,ii+1);
              
          end
          first = (ii-1)*s2+1;
@@ -79,10 +81,12 @@ gadmm_time(1)=0;
          else
              C2= lambda(:,ii);
              %term_2 = rho/2*sum_square(x-out(:,ii+1));
-             term_2=rho*(out(:,ii)-out(:,ii+1));
+             %term_2=rho*(out(:,ii)-out(:,ii+1));
+             term_2=-rho*out(:,ii+1);
          end
          %term_1=rho/2*sum_square(x-out(:,ii-1));
-         term_1=rho*(out(:,ii)-out(:,ii-1));
+         %term_1=rho*(out(:,ii)-out(:,ii-1));
+         term_1=-rho*out(:,ii-1);
          first = (ii-1)*s2+1;
          last = first+s2-1;
          
