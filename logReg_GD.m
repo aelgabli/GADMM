@@ -1,4 +1,4 @@
-function x=logReg_GD(X,Y, x, C1, C2, term1, term2,lambda_logistic, gdStep)
+function x=logReg_GD(X,Y, x, C1, C2, term1, term2,lambda_logistic, gdStep, rho)
 
 for j=1:100
 %     for i=1:size(X,1)
